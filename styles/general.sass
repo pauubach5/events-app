@@ -1,39 +1,40 @@
 html, body
-    background: linear-gradient(305deg, #a4d7f0, transparent)
-
+    background-color: #dfdfdf
 ul
     list-style: none
 z
 header
     height: 100px
-
-    padding: 15px 30px
-    align-items: center
-    justify-content: center
->div
+    background-color: #333
+    color: #fff
+    position: fixed
     width: 100%
-    max-width: 1250px
-    margin: auto
+    padding: 15px 15px
     display: flex
-    flex-direction: column
+    flex-direction: row
+    margin: auto
     justify-content: space-between
     align-items: center
-.topNav
-    display: flex
-    justify-content: space-between
-    align-content: center
+    p
+        font-size: 20px
+        justify-content: center
+        font-weight: bold
+        padding-left: 30px
+        color: #FFA726
     nav
         display: flex
         flex-direction: row
-    ul
-        display: flex
-        text-decoration: none
-        list-style: none
-        gap: 15px
-    li
-        font-weight: 600
-        font-size: 20px
-        text-transform: uppercase
+        gap: 30px
+        padding-right: 60px
+        ul
+            display: flex
+            text-decoration: none
+            list-style: none
+            gap: 15px
+            li
+                font-weight: 600
+                font-size: 20px
+                text-transform: uppercase
 
 footer
     background-color: #333
@@ -57,14 +58,29 @@ footer
         flex-direction: column
         justify-content: center
         align-items: center
-
         .title
-            width: 50%
-            font-size: 40px
+            width: 60%
+            font-size: 80px
             text-transform: uppercase
             font-weight: 600
-            padding-bottom: 20px
+            padding: 70px 0 30px 0
             text-align: center
+            color: #414141
+        .description, .highlight
+            font-size: 30px
+            text-align: center
+            padding-top: 30px
+            padding-bottom: 30px
+        .description
+            color: #707070
+        .highlight
+            color: #FFA726
+            font-weight: bold
+            font-size: 40px
+        .all-events
+            display: flex
+            gap: 130px
+            padding-top: 100px
         .home-events-container
             display: flex
             flex-direction: column
@@ -74,19 +90,15 @@ footer
                 font-size: 35px
                 max-width: 300px
                 margin-bottom: 60px
-            .content-title-image
-                gap: 10px
-                align-content: center
-                justify-content: center
-                text-align: center
-                display: flex
-                .text-container
-                    width: 30%
-                    margin-top: 35px
-                    line-height: 20px
-                    p
-                        padding-left: 20px
-                        text-align: left
+            .image
+                border-radius: 12px
+                width: 300px
+                height: 300px
+            .text-container
+                width: 90%
+                margin-top: 35px
+                line-height: 20px
+                text-align: justify
 
 .home_body
     display: flex

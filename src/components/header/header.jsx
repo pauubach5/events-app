@@ -3,9 +3,8 @@ import Link from "next/link";
 
 export const Header = () => {
     return (
-        <header>
-            <div className="topNav">
-                <Image alt='webiste logo' src={'/images/logo1`.jpg'} width={50} height={50} />
+        <header className="topNav">
+                <p>Events App</p>
                 <nav>
                     <ul>
                         <li>
@@ -23,7 +22,6 @@ export const Header = () => {
                         </li>
                     </ul>  
                 </nav>
-            </div>
         </header>
     )
 }

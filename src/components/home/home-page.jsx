@@ -3,22 +3,21 @@ import Image from "next/image";
 
 export const HomePage = ({data}) => (
     <main>
-    <p className="title">Events Finder</p>
-    {
+        <h2 className="title">Events Finder App</h2>
+        <p className="description">Welcome to Events Finder App! Discover exciting events in Barcelona, San Francisco, and London. Click, explore, and register for personalized updates on the hottest happenings in your city.</p>
+        <p className="highlight">Scroll down and enjoy!</p>
+    <div className="all-events">
+        {
         data.map(ev => {
-            return (
+            return (    
                 <Link className="home-events-container" key={ev.id} href={`events/${ev.id}`} passHref> 
-                    <div>
-                        <h2>{ev.title}</h2>
-                    </div>
-                    <div className="content-title-image">
-                        <Image alt={ev.title} src={ev.image} width={300} height={300}></Image>
-                        <p className="text-container">{ev.description}</p>
-                    </div>
-
-            </Link>
-        )
+                    <h2>{ev.title}</h2>
+                    <Image className="image" alt={ev.title} src={ev.image} width={300} height={300}></Image>
+                    <p className="text-container">{ev.description}</p>
+                </Link>
+            )
         })
-    }
+        }
+    </div>
     </main>
 )
