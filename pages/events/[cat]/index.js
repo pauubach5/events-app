@@ -1,7 +1,5 @@
 import CatEvent from '@/src/components/events/catEvent';
-import Image from 'next/image';
-import Link from 'next/link';
-//Link is to do a SPA, no need to reloading every page
+
 const EventsCatPage = ({ data, pageName}) => {
     return (
         <CatEvent data = {data} pageName = {pageName} />

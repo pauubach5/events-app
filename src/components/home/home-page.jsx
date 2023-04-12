@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export const HomePage = ({data}) => (
     <main>
@@ -12,7 +11,7 @@ export const HomePage = ({data}) => (
             return (    
                 <Link className="home-events-container" key={ev.id} href={`events/${ev.id}`} passHref> 
                     <h2>{ev.title}</h2>
-                    <Image className="image" alt={ev.title} src={ev.image} width={300} height={300}></Image>
+                    <img className="image" alt={ev.title} src={ev.image} width={300} height={300}></img>
                     <p className="text-container">{ev.description}</p>
                 </Link>
             )

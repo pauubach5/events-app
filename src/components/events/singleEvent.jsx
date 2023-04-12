@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { useRouter } from "next/router"
 import { useRef, useState} from "react"
 
@@ -42,7 +41,7 @@ export default function SingleEvent({ data }) {
 
     return (
         <div className='event_single_page'>
-            <Image className='single-image' src={data.image} alt={data.title} width={1000} height={500} />
+            <img className='single-image' src={data.image} alt={data.title} width={1000} height={500} />
             <div className="event-content">
                 <h1>{data.title}</h1>
                 <p>{data.description}</p>

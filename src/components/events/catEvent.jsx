@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const CatEvent = ({data, pageName}) => {
   return (
@@ -9,7 +8,7 @@ const CatEvent = ({data, pageName}) => {
             <div className='content'>
                 {data.map(ev => (
                     <Link className="card" passHref href={`/events/${ev.city}/${ev.id}`} key={ev.id}>
-                        <Image alt={ev.title} src={ev.image} width={300} height={300}></Image>
+                        <img alt={ev.title} src={ev.image} width={300} height={300}></img>
                         <h2>{ev.title}</h2>
                         <p>{ev.description}</p>
                     </Link>

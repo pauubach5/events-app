@@ -1,5 +1,4 @@
 import SingleEvent from '@/src/components/events/singleEvent';
-import Image from 'next/image';
 
 const EventPage = ({ data }) => <SingleEvent data={data} />
         
