@@ -24,7 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installation
 
 1. Clone the repository
-   git clone https://github.com/your_username/events-app.git
+   git clone https://github.com/pauubach5/events-app.git
 
 2. Install dependencies
    npm install
