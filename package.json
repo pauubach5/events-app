@@ -1,15 +1,12 @@
 {
   "name": "events-app",
   "version": "0.1.0",
-  "homepage": "https://pauubach5.github.io/events-app",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "13.2.4",
@@ -17,7 +14,6 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
     "sass": "^1.60.0"
   }
 }
